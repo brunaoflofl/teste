@@ -16,13 +16,16 @@ const AppContent = ({userinfo, repos, starred, handleSearch, getRepos, getStarre
             className="repos"
             title="Repositórios"
             repos={repos}
-            />
+        />
         }
-            <Repos
+        {!!repos.length && 
+        
+        <Repos
             className="starred"
             title="Favoritos"
             repos={starred}
-            />
+        />
+        }
     </div>
 )
 AppContent.propTypes = {
