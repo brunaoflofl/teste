@@ -22,4 +22,5 @@ body {
 }
 .user-info img {
     float: left;
+    margin-right: 30px;
 }
